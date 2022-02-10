@@ -1,0 +1,533 @@
+/* ----------------------------------// Apertura General //---------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Amethysta&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Amethysta', serif;
+}
+
+// Paleta de colores
+$color1:#13294b;
+$color2:#2905a1;
+$color3:#c3d7ee;
+$color4:#f5efe6;
+$color5:black;
+
+// Estilo de fuente
+$font-size:50px;
+
+// Tamaños
+$height:500px;
+$widht:750px;
+
+.header{
+    background-color: $color5;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    
+        .header__logo{ 
+            display: block;
+            background-image: url("../Multimedia/Imagenes/LogoBR.webp");
+            background-size: cover;
+            width: 95px;
+            height: 90px;
+
+                .header__logo--size{
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                }
+        }
+
+        .header__nav{
+            height: 20%;
+            background-color: $color5;
+            border:$color2;
+            border-radius: 3px;
+            font-style: italic;
+            font-size: $font-size - 36;
+            text-align: center;
+
+                .header__a--none{
+                    color: $color3;
+                    text-decoration: none;
+                }
+        }
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            font-size: $font-size - 36;
+
+                .dropdown-content{
+                    display: none;
+                    position: absolute;
+                    background-color: $color5;
+                    min-width: 180px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    border-radius: 3px;
+
+                        a{
+                            padding: 12px 16px;
+                            display: block;
+                            text-decoration: none;
+                        }
+
+                        a:hover{
+                            background-color: $color1;
+                        }
+                }
+        }
+
+        .dropdown:hover{
+            
+            .dropdown-content{
+                display: block;
+            }
+        }
+}
+
+.footer{
+    background-color: black;
+    padding: 25px 0px 25px 10px;
+
+        .footer__item--margin{
+            margin-left: 20px;
+        }
+
+        .footer__item:hover{
+            background-color: darken($color3, 10);
+            padding: 3px 3px;
+            border-radius: 3px;
+            transform: scale(1.2);
+            transition: 0.7s;
+        }
+
+        .footer__a{
+            font-size: $font-size - 36;
+            color: $color3;
+            text-decoration: none;
+        }
+
+        .footer__a:hover{
+            color: $color1;
+            font-weight: bolder;
+        }
+
+        .footer__icon{
+            display: block;
+            background-image: url("../Multimedia/Imagenes/discord.webp");
+            background-size: cover;
+            width: 25px;
+            height: 25px;
+
+                .footer__aicon--size{
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                }
+        }
+}
+
+
+.title{
+    color: $color1;
+    font-weight: bolder;
+    font-size: $font-size - 14;
+    line-height: calc($height / 10) + 10;
+}
+
+.centerTitle{
+    text-align: center;
+    color: $color1 ;
+    font-weight: bolder;
+    font-size: $font-size - 14;
+    line-height: 45px;
+}
+
+.subtitle{
+    color: $color1;
+    font-weight: bolder;
+    font-size: $font-size - 26;
+    line-height: 60px;
+
+        .p{
+            margin-left: 5px;
+        }
+}
+
+.p{
+    margin-bottom: 20px;
+    text-align: justify;
+    color: $color5; 
+    font-weight: normal;
+    font-size: $font-size - 34;
+    line-height: normal;
+}
+
+.flexboxColumn{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+/* ----------------------------------// Cierre General //---------------------------------- */
+
+
+/* ----------------------------------// Apertura Secciones //---------------------------------- */
+
+.body{
+    background-image: linear-gradient($color3, $color1);
+    background-attachment: fixed;
+    padding: 120px 0 0 0;
+    height: 100vh;
+}
+.section{
+    padding-bottom: 40px;
+    
+    /* // Index // */
+    .main{
+        .main1__img{
+            width: 500px;
+            height: 450px;
+            display: block;
+            margin: auto;
+        }
+
+        .main1__p{
+            padding-top: 10px;
+        }
+
+        .main2{
+            margin: 30px 0;
+                .main2__p{
+                    padding-right: 20px;
+                }
+                
+                .main2__table{
+                    background-image: url(../Multimedia/Imagenes/Background.webp);
+                    filter: opacity(0.7) drop-shadow(0 0 0 $color1); 
+                    background-size: cover;
+                    overflow: hidden;
+                    font-weight: bolder;
+                    text-align: center;
+                    height: $height - 100;
+                        th{
+                            border: 2px solid $color1;
+                            padding: 15px 20px;
+                            color: darken($color1, 15)
+                        }
+
+                        td{
+                            border: 2px solid $color1;
+                            padding: 15px 20px;
+                            color: $color1;
+                        }
+                }
+        }
+    }
+
+    /* // Cómo Jugar // */
+    .howTP__subtitle--margin{
+        margin-left: 20px;
+    }
+
+    .howTP__a--none{
+        text-decoration: none;
+        color: $color2;
+    }
+
+    /* // Reglas // */
+    .rules__p--margin{
+        margin: auto;
+        width: 50%; 
+    }
+
+    /* // Instalación // */
+    .installation__p--margin{
+        margin: auto;
+        margin-bottom: 50px;
+        width: 80%; 
+    }
+
+    .installation__subsubtitle--size{
+        font-size: $font-size - 28;
+        margin-left: 5px;
+    }
+    .installation__list{
+        margin-left: 100px;
+        list-style-type: decimal;
+    }
+
+    .installation__img{
+        height: $height - 125;
+        width: $widht - 100;
+        background-image: url("../Multimedia/Imagenes/notFound.webp");
+        background-size: cover;
+        background-position: center;
+        margin: 20px;
+    }
+
+    /* // Crear Personaje // */
+    .createCharacter__p--margin{
+        margin: 20px 0;
+    }
+
+    .createCharacter__subtitleUl{
+        margin-left: 60px;
+    }
+
+    .createCharacter__subtitleUl{
+        color: $color1;
+        font-size: $font-size - 26;
+        line-height: 60px;
+        list-style-type: decimal;
+            .subtitleUl__p--margin{
+                margin-left: 5px;
+                margin-bottom: 20px;
+            }
+    }
+
+    /* // Multimedia // */
+    .gallery__photos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "photo1 photo2 photo3 photo4"
+            "photo5 photo5 photo6 photo7"
+            "photo8 photo9 photo10 photo11";
+        justify-items: center;
+        align-items: center;
+        padding-left: 4%;
+            
+            .img{
+                height: calc($height / 2);
+                width: 99%;
+                border: 2px solid $color5;
+                margin: 3px;
+            }
+
+            .img1-icon{
+                grid-area: photo1;
+            }
+
+            .img2-icon{
+                grid-area: photo2;
+            }
+            
+            .img3-icon{
+                grid-area: photo3;
+            }
+            
+            .img4-icon{
+                grid-area: photo4;
+            }
+            
+            .img5-icon{
+                grid-area: photo5;
+            }
+            
+            .img6-icon{
+                grid-area: photo6;
+            }
+            
+            .img7-icon{
+                grid-area: photo7;
+            }
+            
+            .img8-icon{
+                grid-area: photo8;
+            }
+            
+            .img9-icon{
+                grid-area: photo9;
+            }
+            
+            .img10-icon{
+                grid-area: photo10;
+            }
+            
+            .img11-icon{
+                grid-area: photo11;
+            }
+
+            .img:hover{
+                transform: scale(1.2);
+                transition: 0.7s;
+            }
+
+            @each $image in img1 , img2 , img3 , img4 , img5 , img6 , img7 , img8 , img9 , img10 , img11 {
+                .#{$image}-icon {
+                    background-image: url("../Multimedia/Imagenes/#{$image}.webp");
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+
+    }
+
+    .multimedia__videos{
+        width: 100%;
+        height: $height;
+        justify-items: center;
+        align-items: center;
+
+        .container__video--border{
+            border: 2px solid $color5;
+            width: 100%;
+            height: $height + 4;
+            
+                .video{
+                    width: 100%;
+                    height: $height;
+                }
+        }
+        
+
+    }
+
+    /* // CTA // */
+    .aboutUs__p--margin{
+        margin-left: 20px;
+    }
+
+    .contactUs{
+        
+        .contactUs__form{
+            background-color: $color4;
+            border-radius: 3px;
+            font-size: $font-size - 36;
+            padding: 20px;
+            width: 600px;
+            margin-left: 15px;
+        }
+    
+        .form__field{
+            border: solid 1px;
+            padding: 10px;
+            outline: none;
+            width: 70%;
+            border-radius: 3px;
+        }
+
+        .field__text--width{
+            width: 90%;
+        }
+
+        .form__field:focus{
+            border-color: $color1;
+        }
+
+        .form__button{
+            border: 0;
+            border-radius: 3px;
+            background-color: $color1;
+            color: $color4;
+            padding: 20px 10%;
+        }
+
+        .form__button:hover{
+            background-color: darken($color1, 5);
+        }
+
+        .form__button:active{
+            background-color: darken($color1, 10);
+        }
+    }
+}
+.heaeder404{
+    background-color: $color5;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 95px;
+
+        .header404__logo{
+            display: block;
+            background-image: url("../Multimedia/Imagenes/LogoBR404.webp");
+            background-size: cover;
+            width: 95px;
+            height: 90px;
+        }
+}
+
+.section404{
+    display: flex;
+    width: 100%;
+    height: 75%;
+    text-align: center;
+
+        .error404{
+            width: 100%;
+            height: 250px;
+            max-width: 450px;
+            background-color: $color4;
+            border-radius: 3px;
+
+            .error404__title{
+                color: $color3;
+                background-color: $color5;
+                font-size: 20px;
+                border-color: solid 3px $color4;
+            }
+            
+            .error404__tContainer{
+                margin-top: 25px;
+                font-weight: bolder;
+                color: $color5;
+
+                    .error404__subtitle{
+                        font-size: 40px;
+                        margin-bottom: 25px;
+                    }
+
+                    .error404__p{
+                        margin: 0 20px;
+
+                            .error404__button{
+                                text-decoration: none;
+                                font-weight: lighter;
+                                color: $color4;
+                                background-color: $color1;
+                                padding: 3px 5px;
+                                border-radius: 3px;
+                            }
+
+                            .error404__button:hover{
+                                background-color: darken($color1, 5);
+                            }
+
+                            .error404__button:active{
+                                background-color: darken($color1, 10);
+                            }
+                    }
+            }
+            
+        }
+}
+
+.section__multimedia--gradient{
+    padding-bottom: 115px;
+}
+/* ----------------------------------// Cierre Secciones //---------------------------------- */
+
+/* ----------------------------------// Apertura jQueries //---------------------------------- */
+@media (max-width: 576px){
+    
+    .header__divLogo--center{
+        display: flex;
+        justify-content: center;
+        width: 50px;
+    }
+    
+    .main1__img{
+        width: 100%;
+        height: $height - 100;
+    }
+}
