@@ -94,6 +94,7 @@ $widht:750px;
 .footer{
     background-color: black;
     padding: 25px 0px 25px 10px;
+    margin-top: auto;
 
         .footer__item--margin{
             margin-left: 20px;
@@ -184,7 +185,9 @@ $widht:750px;
     background-image: linear-gradient($color3, $color1);
     background-attachment: fixed;
     padding: 120px 0 0 0;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .section{
     padding-bottom: 40px;
