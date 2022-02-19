@@ -48,6 +48,7 @@
 .header .dropdown .dropdown-content {
   display: none;
   position: absolute;
+  text-align: left;
   background-color: black;
   min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -67,6 +68,7 @@
 
 .footer {
   background-color: black;
+  width: 100%;
   padding: 25px 0px 25px 10px;
   margin-top: auto;
 }
@@ -77,8 +79,10 @@
   background-color: #9bbde3;
   padding: 3px 3px;
   border-radius: 3px;
-  transform: scale(1.2);
   transition: 0.7s;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .footer .footer__a {
   font-size: 14px;
@@ -90,7 +94,6 @@
   font-weight: bolder;
 }
 .footer .footer__icon {
-  display: block;
   background-image: url("../Multimedia/Imagenes/discord.webp");
   background-size: cover;
   width: 25px;
@@ -209,6 +212,9 @@
   margin: auto;
   width: 50%;
 }
+.section .rules__subtitle {
+  margin-left: 20px;
+}
 .section .installation__p--margin {
   margin: auto;
   margin-bottom: 50px;
@@ -295,8 +301,10 @@
   grid-area: photo11;
 }
 .section .gallery__photos .img:hover {
-  transform: scale(1.2);
   transition: 0.7s;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .section .gallery__photos .img1-icon {
   background-image: url("../Multimedia/Imagenes/img1.webp");
@@ -474,17 +482,98 @@
 
 /* ----------------------------------// Cierre Secciones //---------------------------------- */
 /* ----------------------------------// Apertura jQueries //---------------------------------- */
-@media (max-width: 576px) {
+/* // Header Jqueries(large)// */
+@media (max-width: 1199px) {
   .header__divLogo--center {
     display: flex;
     justify-content: center;
-    width: 50px;
+  }
+  .header__divLogo--center .header__logo {
+    margin-right: 30px;
   }
 
-  .main1__img {
-    width: 100%;
-    height: 400px;
+  .section {
+    padding-top: 25px;
+  }
+  .section .main2__table {
+    margin-left: 150px;
+  }
+
+  .error404 {
+    height: 450px;
+    max-width: 800px;
   }
 }
+/* // Header Jqueries(medium)// */
+@media (max-width: 991px) {
+  .header__divLogo--center {
+    display: flex;
+    justify-content: center;
+  }
+  .header__divLogo--center .header__logo {
+    margin-right: 30px;
+  }
+
+  .section {
+    padding-top: 25px;
+  }
+  .section .main2__table {
+    margin-left: 45px;
+  }
+  .section .installation__img {
+    height: 350px;
+    width: 500px;
+    margin: 5px 0;
+  }
+}
+/* // Header Jqueries(small)// */
+@media (max-width: 767px) {
+  .header__divLogo--center {
+    display: flex;
+    justify-content: center;
+  }
+  .header__divLogo--center .header__logo {
+    margin-right: 30px;
+  }
+
+  .header__nav {
+    padding-top: 10px;
+  }
+
+  .section {
+    padding-top: 25px;
+  }
+  .section .main1__img {
+    width: 350px;
+    height: 250px;
+  }
+  .section .main2__table {
+    margin-left: 35px;
+  }
+  .section .installation__img {
+    height: 275px;
+    width: 350px;
+    margin: 5px 0;
+  }
+  .section .createCharacter__subtitleUl {
+    margin-left: 30px;
+  }
+  .section .multimedia__videos {
+    height: 300px;
+  }
+  .section .multimedia__videos .container__video--border {
+    height: 304px;
+  }
+  .section .multimedia__videos .container__video--border .video {
+    height: 300px;
+  }
+  .section .contactUs__form {
+    margin-left: 0;
+  }
+  .section .form__button {
+    padding: 5px 10%;
+  }
+}
+/* ----------------------------------// Cierre jQueries //---------------------------------- */
 
 /*# sourceMappingURL=estilos.css.map */
