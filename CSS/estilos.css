@@ -213,7 +213,7 @@
   width: 50%;
 }
 .section .rules__subtitle {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .section .installation__p--margin {
   margin: auto;
@@ -484,11 +484,14 @@
 /* ----------------------------------// Apertura jQueries //---------------------------------- */
 /* // Header Jqueries(large)// */
 @media (max-width: 1199px) {
-  .header__divLogo--center {
+  .header {
+    position: absolute;
+  }
+  .header .header__divLogo--center {
     display: flex;
     justify-content: center;
   }
-  .header__divLogo--center .header__logo {
+  .header .header__divLogo--center .header__logo {
     margin-right: 30px;
   }
 
