@@ -8,88 +8,64 @@
     <meta name="keywords" content="BOOMRP, GTA, GTA V, roleplay, reglas, normativas, generales, organizaciones, policiales, same, mecanicos, latino, LATAM, argentino">
     <title>BOOMRP > Reglas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
-
 <body class="body">
     <header class="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="header__divLogo--center col-xl-2 col-sm-12">
-                    <i class="header__logo" alt="Logo Boom Roleplay">
-                        <a class="header__logo--size" href="../index.html"></a>
-                    </i>
+        <a class="header__logo" href="../index.html">
+            <img class="logo__img" src="../Multimedia/Images/LogoBR.webp" alt="logo">
+        </a>
+        <div class="header__nav navbar">
+            <a class="nav__a a" href="../index.html">Inicio</a>
+            <div id="how-TP" class="dropdown">
+                <a class="nav__a a" href="./how-TP.html">Cómo Jugar
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a class="nav__a a" href="./rules.html">Reglas</a>
+                    <a class="nav__a a" href="./installation.html">Instalación</a>
+                    <a class="nav__a a" href="./create-character.html">Creación de Personaje</a>
                 </div>
-                <nav class="header__nav col-xl-6 col-sm-12">
-                    <div class="navbar justify-content-around">
-                        <a class="header__a--none" href="../index.html">Inicio</a>
-                        <div class="dropdown">
-                            <a class="header__a--none dropbtn" href="how-tP.html">Cómo jugar
-                                <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <a class="header__a--none" href="rules.html">Reglas</a>
-                                <a class="header__a--none" href="installation.html">Instalación</a>
-                                <a class="header__a--none" href="create-character.html">Creación de Personaje</a>
-                            </div>
-                        </div> 
-                        <a class="header__a--none" href="store.html">Tienda</a>
-                        <a class="header__a--none" href="multimedia.html">Multimedia</a>
-                    </div>
-                </nav>    
             </div>
+            <a class="nav__a a" href="./store.html">Tienda</a>
+            <a class="nav__a a" href="./multimedia.html">Multimedia</a>
         </div>
     </header>
 
-    <section class="section">
-        <div class="rules container col-sm-12">    
-            <h1 class="rules__title centerTitle">Reglas del servidor</h1>
-            <div class="rules__p--margin">
-                <p class="rules__p p">Al acceder al servidor, estás certificando la total aceptación de las siguientes normativas. Aquí se describen los términos en los que proporcionamos el servicio de acceso al juego.</p>
-                <p class="rules__p p">Es necesario que antes de empezar a jugar leas bien las normas. En caso contrario, podrías ser condenado por desconocimiento de las mismas.</p>
-                <p class="rules__p p">El desconocimiento de las reglas no te absolve sobre la responsabilidad de cumplirlas.</p>
-            </div>
-            
-            <div class="row">
-                <div class="rules__subtitle subtitle">
-                    <ol>
-                        <li class="rules__subtitle subtitle">Normativas Generales
-                            <p class="rules__p p rules__button"><a class="rules__a" href="#">Véase aquí</a></p>
-                        </li>
-                        <li class="rules__subtitle subtitle">Normativas Organizaciones
-                            <p class="rules__p p rules__button"><a class="rules__a" href="#">Véase aquí</a></p>
-                        </li>
-                        <li class="rules__subtitle subtitle">Normativas Policiales
-                            <p class="rules__p p rules__button"><a class="rules__a" href="#">Véase aquí</a></p>
-                        </li>
-                        <li class="rules__subtitle subtitle">Normativas S.A.M.E.
-                            <p class="rules__p p rules__button"><a class="rules__a" href="#">Véase aquí</a></p>
-                        </li>
-                        <li class="rules__subtitle subtitle">Normativas Mecanicos
-                            <p class="rules__p p rules__button"><a class="rules__a" href="#">Véase aquí</a></p>
-                        </li>
-                    </ol>
-                </div>
-            </div>
+    <section class="rules">
+        <h2 class="rules__title title">Reglas del servidor</h2>
+        <div class="rules__description">
+            <p class="description__p p">Al acceder al servidor, estás certificando la total aceptación de las siguientes normativas. Aquí se describen los términos en los que proporcionamos el servicio de acceso al juego.</p>
+            <p class="description__p p">Es necesario que antes de empezar a jugar leas bien las normas. En caso contrario, podrías ser condenado por desconocimiento de las mismas.</p>
+            <p class="description__p p">El desconocimiento de las reglas no te absolve sobre la responsabilidad de cumplirlas.</p>
         </div>
+        <ul class="rules__list">
+            <li class="list__item">Normativas Generales
+                <a class="item__a" href="#">Véase aquí</a>
+            </li>
+            <li class="list__item">Normativas Organizaciones
+                <a class="item__a" href="#">Véase aquí</a>
+            </li>
+            <li class="list__item">Normativas Policiales
+                <a class="item__a" href="#">Véase aquí</a>
+            </li>
+            <li class="list__item">Normativas S.A.M.E.
+                <a class="item__a" href="#">Véase aquí</a>
+            </li>
+            <li class="list__item">Normativas Mecánicos
+                <a class="item__a" href="#">Véase aquí</a>
+            </li>
+        </ul>
     </section>
 
     <footer class="footer">
-        <div class="container row col-sm-11 justify-content-between">
-            <div class="footer__item--margin col-sm-7 col-md-5 col-xl-4 row justify-content-around">
-                    <i class="footer__item">
-                        <a class="footer__a" href="about-us.html">Sobre nosotros</a>
-                    </i>
-                    <i class="footer__item">
-                        <a class="footer__a" href="about-us.html#contactanos">Contáctanos</a>
-                    </i>    
-            </div>
-            <div class="col-sm-5 col-xl-8 row justify-content-end">
-                <i class="footer__icon">
-                    <a class="footer__aicon--size" href="https://discord.gg/RnW4WXfpf6"></a>
-                </i>
-            </div>
-        </div> 
+        <div class="footer__references">
+            <a class="references__a a" href="./about-us.html">Sobre Nosotros</a>
+            <a class="references__a a" href="./about-us.html#contact-us">Contáctanos</a>
+        </div>
+        <a class="footer__aIcon" href="https://discord.gg/RnW4WXfpf6">
+            <img class="aIcon__img" src="../Multimedia/Images/discord.png" alt="imagen footer">
+        </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

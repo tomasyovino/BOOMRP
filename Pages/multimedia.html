@@ -6,121 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rememora nuestros mejores momentos en la sección de multimedia. Aquí encontrarás los mejores clips y fotos creados por la comunidad. ¿Quieres que tu recuerdo aparezca? ¡Envíanos el archivo en la sección correspondiente de nuestro discord!">
     <meta name="keywords" content="BOOMRP, GTA, GTA V, roleplay, multimedia, fotos, videos, clips, momentos, mejores momentos, mejores, latino, LATAM, argentino">
-    <title>BOOMRP > Multimedia</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>BOOMRP > Multimedia</title>
 </head>
-
 <body class="body">
     <header class="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="header__divLogo--center col-xl-2 col-sm-12">
-                    <i class="header__logo" alt="Logo Boom Roleplay">
-                        <a class="header__logo--size" href="../index.html"></a>
-                    </i>
+        <a class="header__logo" href="../index.html">
+            <img class="logo__img" src="../Multimedia/Images/LogoBR.webp" alt="logo">
+        </a>
+        <div class="header__nav navbar">
+            <a class="nav__a a" href="../index.html">Inicio</a>
+            <div id="how-TP" class="dropdown">
+                <a class="nav__a a" href="./how-TP.html">Cómo Jugar
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a class="nav__a a" href="./rules.html">Reglas</a>
+                    <a class="nav__a a" href="./installation.html">Instalación</a>
+                    <a class="nav__a a" href="./create-character.html">Creación de Personaje</a>
                 </div>
-                <nav class="header__nav col-xl-6 col-sm-12">
-                    <div class="navbar justify-content-around">
-                        <a class="header__a--none" href="../index.html">Inicio</a>
-                        <div class="dropdown">
-                            <a class="header__a--none dropbtn" href="how-tP.html">Cómo jugar
-                                <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <a class="header__a--none" href="rules.html">Reglas</a>
-                                <a class="header__a--none" href="installation.html">Instalación</a>
-                                <a class="header__a--none" href="create-character.html">Creación de Personaje</a>
-                            </div>
-                        </div> 
-                        <a class="header__a--none" href="store.html">Tienda</a>
-                        <a class="header__a--none" href="multimedia.html">Multimedia</a>
-                    </div>
-                </nav>    
             </div>
+            <a class="nav__a a" href="./store.html">Tienda</a>
+            <a class="nav__a a" href="./multimedia.html">Multimedia</a>
         </div>
     </header>
 
-    <section class="section section__multimedia--gradient">
-        <div class="multimedia">
-            <div class="multimedia__gallery container">
-                <div class="flexboxColumn">
-                    <h2 class="gallery__subtitle subtitle">Fotos</h2>
-                        <div class="gallery__photos">
-                            <div class="img img1-icon"></div>
-                            <div class="img img2-icon"></div>
-                            <div class="img img3-icon"></div>
-                            <div class="img img4-icon"></div>
-                            <div class="img img5-icon"></div>
-                            <div class="img img6-icon"></div>
-                            <div class="img img7-icon"></div>
-                            <div class="img img8-icon"></div>
-                            <div class="img img9-icon"></div>
-                            <div class="img img10-icon"></div>
-                            <div class="img img11-icon"></div>
+    <section class="multimedia">
+        <div class="multimedia__gallery">
+            <h3 class="gallery__subtitle subtitle">Fotos</h3>
+            <img class="gallery__img" id="img1" src="../Multimedia/Images/img1.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img2" src="../Multimedia/Images/img2.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img3" src="../Multimedia/Images/img3.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img4" src="../Multimedia/Images/img4.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img5" src="../Multimedia/Images/img5.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img6" src="../Multimedia/Images/img6.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img7" src="../Multimedia/Images/img7.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img8" src="../Multimedia/Images/img8.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img9" src="../Multimedia/Images/img9.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img10" src="../Multimedia/Images/img10.webp" alt="Imágen de galería">
+            <img class="gallery__img" id="img11" src="../Multimedia/Images/img11.webp" alt="Imágen de galería">
+        </div>
+        <div class="multimedia__videos">
+            <h3 class="videos__subtitle subtitle">Clips</h3>
+            <div id="clips" class="videos__carousel carousel slide" data-ride="carousel">
+                <!-- Indicadores -->
+                <ul class="carousel-indicators">
+                    <li data-target="#clips" data-slide-to="0" class="active"></li>
+                    <li data-target="#clips" data-slide-to="1"></li>
+                    <li data-target="#clips" data-slide-to="2"></li>
+                </ul>    
+                <!-- Diapositivas -->
+                <div class="carousel-inner">
+                    <div class="container__video">
+                        <div class="carousel-item active">
+                            <iframe src="https://www.youtube.com/embed/uZrZkYOAP_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video">
+                                    Tu navegador no implementa el elemento <code>video</code>
+                            </iframe>
                         </div>
-                </div>
-            </div>
-
-            <div class="multimedia__videos container">
-                <h2 class="video__subtitle subtitle">Clips</h2>
-                    <div id="clips" class="carousel slide videos" data-ride="carousel">
-                        <!-- Indicadores -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#clips" data-slide-to="0" class="active"></li>
-                            <li data-target="#clips" data-slide-to="1"></li>
-                            <li data-target="#clips" data-slide-to="2"></li>
-                        </ul>    
-                        <!-- Diapositivas -->
-                        <div class="carousel-inner">
-                            <div class="container__video--border">
-                                <div class="carousel-item active">
-                                    <iframe src="https://www.youtube.com/embed/uZrZkYOAP_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video">
-                                            Tu navegador no implementa el elemento <code>video</code>
-                                    </iframe>
-                                </div>
-                                <div class="carousel-item">
-                                    <iframe src="https://www.youtube.com/embed/uZrZkYOAP_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video">
-                                            Tu navegador no implementa el elemento <code>video</code>
-                                    </iframe>
-                                </div>
-                                <div class="carousel-item">
-                                    <iframe src="https://www.youtube.com/embed/uZrZkYOAP_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video">
-                                            Tu navegador no implementa el elemento <code>video</code>
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>    
-                        <!-- Controles izquierda/derecha -->
-                        <a class="carousel-control-prev" href="#clips" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#clips" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
+                        <div class="carousel-item">
+                            <iframe src="https://www.youtube.com/embed/uZrZkYOAP_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video">
+                                    Tu navegador no implementa el elemento <code>video</code>
+                            </iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe src="https://www.youtube.com/embed/uZrZkYOAP_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video">
+                                    Tu navegador no implementa el elemento <code>video</code>
+                            </iframe>
+                        </div>
                     </div>
+                </div>    
+                <!-- Controles izquierda/derecha -->
+                <a class="carousel-control-prev" href="#clips" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#clips" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
+
     </section>
 
     <footer class="footer">
-        <div class="container row col-sm-11 justify-content-between">
-            <div class="footer__item--margin col-sm-7 col-md-5 col-xl-4 row justify-content-around">
-                    <i class="footer__item">
-                        <a class="footer__a" href="about-us.html">Sobre nosotros</a>
-                    </i>
-                    <i class="footer__item">
-                        <a class="footer__a" href="about-us.html#contactanos">Contáctanos</a>
-                    </i>    
-            </div>
-            <div class="col-sm-5 col-xl-8 row justify-content-end">
-                <i class="footer__icon">
-                    <a class="footer__aicon--size" href="https://discord.gg/RnW4WXfpf6"></a>
-                </i>
-            </div>
-        </div> 
+        <div class="footer__references">
+            <a class="references__a a" href="./about-us.html">Sobre Nosotros</a>
+            <a class="references__a a" href="./about-us.html#contact-us">Contáctanos</a>
+        </div>
+        <a class="footer__aIcon" href="https://discord.gg/RnW4WXfpf6">
+            <img class="aIcon__img" src="../Multimedia/Images/discord.png" alt="imagen footer">
+        </a>
     </footer>
-    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>

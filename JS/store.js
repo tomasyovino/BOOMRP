@@ -16,19 +16,15 @@ function getData(){
             let containerProducts = "";
             productData.forEach(product => {
                 let productContent = `
-                <div class="store__product--margin col" data-category="${product["category"]}" data-all=${product["all"]}>
-                    <div class="card shadow mb-1 rounded" style="width: 20rem;">
-                        <h5 class="card__title pt-2 text-center">${product["name"]}</h5>
-                        <img src=${product["img"]} class="card__img" alt="Imagen producto 2">
-                        <div class="card__body">
-                            <p class="card__text card__description">${product["description"]}</p>
-                            <div class="d-flex justify-content-between">
-                            <h5 class="card__price">$${product["price"]}</h5>
-                                <button class="card__button btn btn-primary" data-id="${product["id"]}" data-name="${product["name"]}" data-price=${product["price"]} data-img="${product["img"]}">Añadir al carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>`;
+                <div class="products__card" data-category="${product["category"]}" data-all="${product["all"]}">
+                <h4 class="card__title title">${product["name"]}</h4>
+                <img class="card__img" src="${product["img"]}" alt="Imagen de ${product["name"]}">
+                <p class="card__description">${product["description"]}</p>
+                <div class="d-flex justify-content-between">
+                    <h5 class="card__price">$${product["price"]}</h5>
+                    <button class="card__button" data-id="${product["id"]}" data-name="${product["name"]}" data-price="${product["price"]}" data-img="${product["img"]}">Añadir al Carrito</button>
+                </div>
+            </div>`;
                 containerProducts += productContent;
             });
 
@@ -80,7 +76,7 @@ function getSingleProduct(productId){
 // Filtra los elementos por categoría para mostrar o no, según la sección actual
 function filterByCategory(){
     const categoryLinks = document.querySelectorAll(".categoryLink");
-    const products = document.querySelectorAll(".store__product--margin");
+    const products = document.querySelectorAll(".products__card");
     categoryLinks.forEach(categoryLink => {
         categoryLink.onclick = function (){
             let categoryId = categoryLink.id;
@@ -99,7 +95,7 @@ function filterByCategory(){
 
 // Filtra los elementos por booleano "all" para mostrar o no, según la sección actual
 function filterByCategoryAll(){
-    const products = document.querySelectorAll(".store__product--margin");
+    const products = document.querySelectorAll(".products__card");
     products.forEach(product => {
         if(product.dataset.all == "false"){
             hideElement(product);
@@ -150,10 +146,10 @@ function renderCart(){
         const content = `
         <th scope="row">1</th>
         <td class="cart__product">
-            <img class="cart__product--img" src=${product.img} alt="Imagen producto 1">
+            <img class="cart__product--img" src="${product.img}" alt="Imagen de ${product.title}">
             <h6 class="cart__product--title">${product.title}</h6>
         </td>
-        <td class="cart__price"><p class="cart__price--p">${product.price}</p></td>
+        <td class="cart__price"><p class="cart__price--p">$${product.price}</p></td>
         <td class="cart__quantity">
             <input class="cart__inputElement" type="number" min="1" value=${product.quantity}>
             <button class="delete btn btn-danger">X</button>
@@ -249,6 +245,8 @@ btnBuy.onclick = () => {
                 'La transacción ha sido realizada.',
                 'success'
               )
+              cart = [];
+              renderCart();
             }
           })
     }

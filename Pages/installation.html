@@ -8,107 +8,91 @@
     <meta name="keywords" content="BOOMRP, GTA, GTA V, roleplay, instalación, guía, fivem, discord, steam, latino, LATAM, argentino">
     <title>BOOMRP > Instalación</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
-
 <body class="body">
     <header class="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="header__divLogo--center col-xl-2 col-sm-12">
-                    <i class="header__logo" alt="Logo Boom Roleplay">
-                        <a class="header__logo--size" href="../index.html"></a>
-                    </i>
+        <a class="header__logo" href="../index.html">
+            <img class="logo__img" src="../Multimedia/Images/LogoBR.webp" alt="logo">
+        </a>
+        <div class="header__nav navbar">
+            <a class="nav__a a" href="../index.html">Inicio</a>
+            <div id="how-TP" class="dropdown">
+                <a class="nav__a a" href="./how-TP.html">Cómo Jugar
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a class="nav__a a" href="./rules.html">Reglas</a>
+                    <a class="nav__a a" href="./installation.html">Instalación</a>
+                    <a class="nav__a a" href="./create-character.html">Creación de Personaje</a>
                 </div>
-                <nav class="header__nav col-xl-6 col-sm-12">
-                    <div class="navbar justify-content-around">
-                        <a class="header__a--none" href="../index.html">Inicio</a>
-                        <div class="dropdown">
-                            <a class="header__a--none dropbtn" href="how-tP.html">Cómo jugar
-                                <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <a class="header__a--none" href="rules.html">Reglas</a>
-                                <a class="header__a--none" href="installation.html">Instalación</a>
-                                <a class="header__a--none" href="create-character.html">Creación de Personaje</a>
-                            </div>
-                        </div> 
-                        <a class="header__a--none" href="store.html">Tienda</a>
-                        <a class="header__a--none" href="multimedia.html">Multimedia</a>
-                    </div>
-                </nav>    
             </div>
+            <a class="nav__a a" href="./store.html">Tienda</a>
+            <a class="nav__a a" href="./multimedia.html">Multimedia</a>
         </div>
     </header>
-    
-    <section class="section">
-        <div class="installation container">
-            <h1 class="installation__title centerTitle">Instalación del Juego</h1>
-                <div class="installation__p--margin">
-                    <p class="installation__p p">Para poder comenzar a jugar GTA V Roleplay, debes asegurarte de tener en posesión, además de una copia original del juego, el acceso a los siguientes programas: Steam, FiveM y Discord.</p>
-                    <p class="installation__p p">Si no los tienes, o no sabes cómo instalarlos ¡No te preocupes, estás en el lugar correcto! Aquí te ofrecemos una guía sobre cómo hacerlo.</p>
-                </div>
-            <div class="installation__subtitle subtitle">
-                <h2>Instala Steam</h2>
-                    <p class="installation__p p">Si no tienes Steam, puedes adquirirlo gratuitamente desde este 
-                        <a href="https://store.steampowered.com/about/?l=spanish" class="instalattion__a">enlace.</a>
+
+    <section class="installation">
+        <div class="installation__presentation">
+            <h2 class="presentation__title title">Instalación del Juego</h2>
+            <p class="presentation__p p">Para poder comenzar a jugar GTA V Roleplay, debes asegurarte de tener en posesión, además de una copia original del juego, el acceso a los siguientes programas: Steam, FiveM y Discord.</p>
+            <p class="presentation__p p">Si no los tienes, o no sabes cómo instalarlos ¡No te preocupes, estás en el lugar correcto! Aquí te ofrecemos una guía sobre cómo hacerlo.</p>
+        </div>
+        <div class="installation__guide">
+            <div class="guide__content">
+                <h3 class="guide__subtitle subtitle">Instala Steam</h3>
+                <p class="guide__p p">Si no tienes Steam, puedes adquirirlo gratuitamente desde este 
+                    <a class="p__a a" href="https://store.steampowered.com/about/?l=spanish">enlace.</a>
                     Si adquiriste el juego mediante esta plataforma, es probable que ya lo tengas en tu equipo.
-                    </p>
-                    <p class="installation__p p">La instalación del programa no presenta ninguna complicación, la propia plataforma detecta tu sistema operativo, por lo qué asentarlo dentro del equipo no difiere de una tradicional lluvia de "siguientes" e "instalar".</p>
-                    <h3 class="installation__subsubtitle--size subtitle">Regístrate y mantente conectado</h3>
-                        <p class="installation__p p">Antes de utilizar o instalar Fivem, debes estar conectado a la plataforma de Steam, ya que estos dos programas se comunican entre sí para poder jugar GTA Roleplay. Por lo tanto, los requisitos son los siguientes:</p>
-                        <ol class="installation__list p">
-                            <li>Crea una cuenta de Steam e inicia sesión.</li>
-                            <li>Mantén tu sesión de Steam abierta en todo momento mientras tengas ejecutado el cliente FiveM.</li>
-                        </ol>
-                        <p class="installation__p p">Repetimos, es indispensable tener abierta tu cuenta de Steam mientras ejecutas o instalas FiveM, incluso aunque tu copia de GTA V se esté ejecutando desde el cliente de Epic Games Launcher o Rockstar Games Launcher.</p>
-                <h2>Instala FiveM</h2>
-                        <p class="installation__p p">FiveM es un cliente adicional gratuito que se usa para poder conectarte a los servidores de roleplay modificados de GTA Online.</p>
-                        <p class="installation__p p">Para poder instalar FiveM en tu equipo sigue estos pasos:</p>
-                        <ol class="installation__list p">
-                            <li>
-                                Entra en este
-                                <a href="https://fivem.net" class="instalattion__a">enlace</a> y haz click en el botón "download client" para comenzar la descarga del programa.
-                                <div class="installation__img"></div>
-                            </li>
-                            <li>Una vez descargado, ejecuta el archivo "FiveM.exe" como administrador</li>
-                            <li>Sigue las instrucciones del instalador</li>
-                            <li>Ejecuta FiveM e inicia sesión con tu cuenta de Social Club.</li>
-                            <li>Dirigete a la pestaña "Play" y aprieta la tecla F8.</li>
-                            <li>Ingresa la clave del servidor situada en nuestro correspondiente canal de Discord.</li>
-                        </ol>
-                <h2>Instala Discord</h2>
-                    <p class="installation__p p">¡¿Qué?! ¡¿Que todavía no te enseñamos a instalar Discord?! No puede ser... Ahí te va una ayuda:</p>
-                    <p class="installation__p p">Discord no solo mejorará mucho tu experiencia roleando y te meterá más en tu papel, ya que te permitirá comunicarte por chat de voz en las partidas, sino que además será necesario para poder entrar en nuestra comunidad de GTA Roleplay.</p>
-                        <ol class="installation__list p">
-                            <li>Puedes utilizar la 
-                                <a href="https://discord.com" class="instalattion__a">versión web de Discord.</a>
-                            </li>
-                            <li> O puedes descargar la aplicación de escritorio, que seguramente te resultará más cómoda.</li>
-                            <li>En cualquier caso, no olvides que necesitas crearte una cuenta de Discord y estar conectado a ella cuando vayas a ingresar a nuestro servidor de GTA Roleplay.</li>
-                        </ol>
-                <h2>¡Y ya está!</h2>
-                <p class="installation__p p">¡Y ya está! Si todo marchó bien y superaste nuestra "white list", ya deberías estar habilitado para jugar con nosotros. De no ser el caso, si tienes cualquier problema con la instalación entonces podemos ayudarte. Contáctanos y explicanos tu problema. Atenderemos tu consulta en menos de 24 horas.</p>
-            </div>
+                </p>
+                <p class="guide__p p">La instalación del programa no presenta ninguna complicación, la propia plataforma detecta tu sistema operativo, por lo qué asentarlo dentro del equipo no difiere de una tradicional lluvia de "siguientes" e "instalar".</p>
+                <div class="guide__steamSpecifications">
+                    <h4 class="steamSpecifications__subtitle subtitle">Regístrate y mantente conectado</h4>
+                    <p class="steamSpecifications__p p">Antes de utilizar o instalar Fivem, debes estar conectado a la plataforma de Steam, ya que estos dos programas se comunican entre sí para poder jugar GTA Roleplay. Por lo tanto, los requisitos son los siguientes:</p>
+                    <ol class="steamSpecifications__list">
+                        <li class="list__item">Crea una cuenta de Steam e inicia sesión.</li>
+                        <li class="list__item">Mantén tu sesión de Steam abierta en todo momento mientras tengas ejecutado el cliente FiveM.</li>
+                    </ol>
+                </div>
+                <p class="guide__p p">Repetimos, es indispensable tener abierta tu cuenta de Steam mientras ejecutas o instalas FiveM, incluso aunque tu copia de GTA V se esté ejecutando desde el cliente de Epic Games Launcher o Rockstar Games Launcher.</p>
+                <h3 class="guide__subtitle subtitle">Instala FiveM</h3>
+                <p class="guide__p p">FiveM es un cliente adicional gratuito que se usa para poder conectarte a los servidores de roleplay modificados de GTA Online.</p>
+                <p class="guide__p p">Para poder instalar FiveM en tu equipo sigue estos pasos:</p>
+                <ol class="guide__list">
+                    <li class="list__item">
+                        Entra en este
+                        <a class="item__a a" href="https://fivem.net">enlace.</a> y haz click en el botón "download client" para comenzar la descarga del programa.
+                    </li>
+                    <li class="list__item">Una vez descargado, ejecuta el archivo "FiveM.exe" como administrador.</li>
+                    <li class="list__item">Sigue las instrucciones del instalador.</li>
+                    <li class="list__item">Ejecuta FiveM e inicia sesión con tu cuenta de Social Club.</li>
+                    <li class="list__item">Dirigete a la pestaña "Play" y aprieta la tecla F8.</li>
+                    <li class="list__item">Ingresa la clave del servidor situada en nuestro correspondiente canal de Discord.</li>
+                </ol>
+                <h3 class="guide__subtitle subtitle">Instala Discord</h3>
+                <p class="guide__p p">¡¿Qué?! ¡¿Que todavía no te enseñamos a instalar Discord?! No puede ser... Ahí te va una ayuda:</p>
+                <p class="guide__p p">Discord no solo mejorará mucho tu experiencia roleando y te meterá más en tu papel, ya que te permitirá comunicarte por chat de voz en las partidas, sino que además será necesario para poder entrar en nuestra comunidad de GTA Roleplay.</p>
+                <ol class="guide__list">
+                    <li class="list__item">Puedes utilizar la
+                        <a href="https://discord.com">versión web de Discord.</a>
+                    </li>
+                    <li class="list__item">O puedes descargar la aplicación de escritorio, que seguramente te resultará más cómoda.</li>
+                    <li class="list__item">En cualquier caso, no olvides que necesitas crearte una cuenta de Discord y estar conectado a ella cuando vayas a ingresar a nuestro servidor de GTA Roleplay.</li>
+                </ol>
+                <h3 class="guide__subtitle subtitle">¡Y ya está!</h3>
+                <p class="guide__p p">¡Y ya está! Si todo marchó bien y superaste nuestra "white list", ya deberías estar habilitado para jugar con nosotros. De no ser el caso, si tienes cualquier problema con la instalación entonces podemos ayudarte. <a href="#">Contáctanos</a> y explicanos tu problema. Atenderemos tu consulta en menos de 24 horas.</p>
+                </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container row col-sm-11 justify-content-between">
-            <div class="footer__item--margin col-sm-7 col-md-5 col-xl-4 row justify-content-around">
-                    <i class="footer__item">
-                        <a class="footer__a" href="about-us.html">Sobre nosotros</a>
-                    </i>
-                    <i class="footer__item">
-                        <a class="footer__a" href="about-us.html#contactanos">Contáctanos</a>
-                    </i>    
-            </div>
-            <div class="col-sm-5 col-xl-8 row justify-content-end">
-                <i class="footer__icon">
-                    <a class="footer__aicon--size" href="https://discord.gg/RnW4WXfpf6"></a>
-                </i>
-            </div>
-        </div> 
+        <div class="footer__references">
+            <a class="references__a a" href="./about-us.html">Sobre Nosotros</a>
+            <a class="references__a a" href="./about-us.html#contact-us">Contáctanos</a>
+        </div>
+        <a class="footer__aIcon" href="https://discord.gg/RnW4WXfpf6">
+            <img class="aIcon__img" src="../Multimedia/Images/discord.png" alt="imagen footer">
+        </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

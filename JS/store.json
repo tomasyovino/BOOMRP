@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Banda Normal",
-        "img": "../Multimedia/Imagenes/normalGang.webp",
+        "img": "../Multimedia/Images/normalGang.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 800,
         "category": "gangs",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "Banda con Armario",
-        "img": "../Multimedia/Imagenes/cabinetGang.webp",
+        "img": "../Multimedia/Images/cabinetGang.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 1200,
         "category": "gangs",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "name": "VIP Banda 1",
-        "img": "../Multimedia/Imagenes/vipGang1.webp",
+        "img": "../Multimedia/Images/vipGang1.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 2300,
         "category": "gangs",
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "name": "VIP Banda 2",
-        "img": "../Multimedia/Imagenes/vipGang2.webp",
+        "img": "../Multimedia/Images/vipGang2.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 3000,
         "category": "gangs",
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "name": "VIP Banda 3",
-        "img": "../Multimedia/Imagenes/vipGang3.webp",
+        "img": "../Multimedia/Images/vipGang3.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 4000,
         "category": "gangs",
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "name": "Alpha",
-        "img": "../Multimedia/Imagenes/carAlpha.webp",
+        "img": "../Multimedia/Images/carAlpha.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 500,
         "category": "vehicle",
@@ -56,7 +56,7 @@
     {
         "id": 7,
         "name": "Mustang",
-        "img": "../Multimedia/Imagenes/carMustang.webp",
+        "img": "../Multimedia/Images/carMustang.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 500,
         "category": "vehicle",
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "name": "Broughy 1322",
-        "img": "../Multimedia/Imagenes/carBroughy1322.webp",
+        "img": "../Multimedia/Images/carBroughy1322.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 500,
         "category": "vehicle",
@@ -74,7 +74,7 @@
     {
         "id": 9,
         "name": "Perico Heist",
-        "img": "../Multimedia/Imagenes/carPericoHeist.webp",
+        "img": "../Multimedia/Images/carPericoHeist.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 700,
         "category": "vehicle",
@@ -83,7 +83,7 @@
     {
         "id": 10,
         "name": "Grotti Italy GTO",
-        "img": "../Multimedia/Imagenes/carGrottiItaliGTO.webp",
+        "img": "../Multimedia/Images/carGrottiItaliGTO.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 700,
         "category": "vehicle",
@@ -92,7 +92,7 @@
     {
         "id": 11,
         "name": "Tesla Cibernético",
-        "img": "../Multimedia/Imagenes/carTeslaCyber.webp",
+        "img": "../Multimedia/Images/carTeslaCyber.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 700,
         "category": "vehicle",
@@ -101,7 +101,7 @@
     {
         "id": 12,
         "name": "VIP Puma",
-        "img": "../Multimedia/Imagenes/vipPuma.webp",
+        "img": "../Multimedia/Images/vipPuma.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 800,
         "category": "account",
@@ -110,7 +110,7 @@
     {
         "id": 13,
         "name": "Quitar Aviso",
-        "img": "../Multimedia/Imagenes/toggleWarn.webp",
+        "img": "../Multimedia/Images/toggleWarn.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 200,
         "category": "account",
@@ -119,7 +119,7 @@
     {
         "id": 14,
         "name": "Quitar Strike",
-        "img": "../Multimedia/Imagenes/toggleStrike.webp",
+        "img": "../Multimedia/Images/toggleStrike.webp",
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus iusto possimus corporis rem praesentium consequuntur nemo ratione, sequi quo deleniti vel culpa aliquid assumenda ipsum placeat, adipisci omnis?",
         "price": 400,
         "category": "account",

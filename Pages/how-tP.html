@@ -6,79 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="¡Haz tus primeros pasos junto a nosotros! Aprende aquí, todo lo que necesitas saber para formar parte de nuestra comunidad.">
     <meta name="keywords" content="BOOMRP, GTA, GTA V, roleplay, como jugar, primeros pasos, latino, LATAM, argentino">
-    <title>BOOMRP > Primeros pasos</title>
+    <title>BOOMRP > Cómo Jugar</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
-
 <body class="body">
     <header class="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="header__divLogo--center col-xl-2 col-sm-12">
-                    <i class="header__logo" alt="Logo Boom Roleplay">
-                        <a class="header__logo--size" href="../index.html"></a>
-                    </i>
+        <a class="header__logo" href="../index.html">
+            <img class="logo__img" src="../Multimedia/Images/LogoBR.webp" alt="logo">
+        </a>
+        <div class="header__nav navbar">
+            <a class="nav__a a" href="../index.html">Inicio</a>
+            <div id="how-TP" class="dropdown">
+                <a class="nav__a a" href="./how-TP.html">Cómo Jugar
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a class="nav__a a" href="./rules.html">Reglas</a>
+                    <a class="nav__a a" href="./installation.html">Instalación</a>
+                    <a class="nav__a a" href="./create-character.html">Creación de Personaje</a>
                 </div>
-                <nav class="header__nav col-xl-6 col-sm-12">
-                    <div class="navbar justify-content-around">
-                        <a class="header__a--none" href="../index.html">Inicio</a>
-                        <div class="dropdown">
-                            <a class="header__a--none dropbtn" href="how-tP.html">Cómo jugar
-                                <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <a class="header__a--none" href="rules.html">Reglas</a>
-                                <a class="header__a--none" href="installation.html">Instalación</a>
-                                <a class="header__a--none" href="create-character.html">Creación de Personaje</a>
-                            </div>
-                        </div> 
-                        <a class="header__a--none" href="store.html">Tienda</a>
-                        <a class="header__a--none" href="multimedia.html">Multimedia</a>
-                    </div>
-                </nav>    
             </div>
+            <a class="nav__a a" href="./store.html">Tienda</a>
+            <a class="nav__a a" href="./multimedia.html">Multimedia</a>
         </div>
     </header>
-    
-    <section class="section">
-        <div class="howTP container col-sm-12">
-            <h1 class="howTP__title centerTitle col-sm-12">Comienza a Jugar en Boom GTA Roleplay</h1>
-            <i class="howTP__subtitle subtitle col-sm-12">Cómo Jugar</i>
-                <p class="howTP__p p col-sm-12">Comenzar a Jugar en Boom GTA Roleplay es muy sencillo. Tan solo tienes que seguir la serie de pasos que a continuación te enumeramos y estarás disfrutando de nuestra comunidad antes de que te des cuenta.</p>
-            <div class="howTP__subtitle howTP__subtitle--margin subtitle col-sm-11">
-                <i>Lee las reglas</i>
-                    <p class="howTP__p p">Antes de comenzar, debemos pedirte que leas las 
-                        <a class="howTP__a--none" href="rules.html">Reglas</a>
-                        . Es importante en función de; para que la vida diaria dentro de nuestro pequeño mundo virtual funcione correctamente, es necesario que todos nuestros usuarios se comporten acorde a la norma.</p>
-                <i>Instala el juego</i>
-                    <p class="howTP__p p">Una vez hayas leído las reglas, puedes consultar nuestra guía de instalación de Fivem. Tienes información paso a paso para realizar la descarga y la instalación en la sección 
-                        <a class="howTP__a--none" href="installation.html">Instalación</a>
-                        . Para poder jugar con nosotros, tan solo necesitarás el programa mencionado,Steam y el GTA V. Puedes conseguir el juego en sus plataformas correspondientes.</p>
-                <i>Define tu personaje</i>
-                    <p class="howTP__p p">Este paso no es obligatorio ¡Pero lo recomendamos muchísimo! Toda experiencia de rol se disfruta mejor cuando los personajes están bien definidos ¡Y nosotros te ofrecemos una guía básica de 
-                        <a class="howTP__a--none" href="create-character.html">Creación de personaje</a>
-                         para que puedas comprobarlo!</p>
-            </div>
-        </div>
+
+    <section class="howTP">
+        <h2 class="howTP__title title">Comienza a Jugar en Boom GTA Roleplay</h2>
+        <h3 class="howTP__subtitle subtitle">Cómo Jugar</h3>
+        <p class="howTP__p p">Comenzar a Jugar en Boom GTA Roleplay es muy sencillo. Tan solo tienes que seguir la serie de pasos que a continuación te enumeramos y estarás disfrutando de nuestra comunidad antes de que te des cuenta.</p>
+        <ul class="howTP__list">
+            <li class="list__item">Lee las reglas</li>
+                <p class="item__p p">
+                    Antes de comenzar, debemos pedirte que leas las <a class="p__a a" href="./rules.html">Reglas.</a> Es importante en función de; para que la vida diaria dentro de nuestro pequeño mundo virtual funcione correctamente, es necesario que todos nuestros usuarios se comporten acorde a la norma.
+                </p>
+            <li class="list__item">Instala el juego</li>
+                <p class="item__p p">
+                    Una vez hayas leído las reglas, puedes consultar nuestra guía de instalación de Fivem. Tienes información paso a paso para realizar la descarga y la instalación en la sección <a class="p__a a" href="./installation.html">Instalación.</a> Para poder jugar con nosotros, tan solo necesitarás el programa mencionado,Steam y el GTA V. Puedes conseguir el juego en sus plataformas correspondientes.
+                </p>
+            <li class="list__item">Define tu personaje</li>
+                <p class="item__p p">
+                    Este paso no es obligatorio ¡Pero lo recomendamos muchísimo! Toda experiencia de rol se disfruta mejor cuando los personajes están bien definidos ¡Y nosotros te ofrecemos una guía básica de <a class="p__a a" href="./create-character.html">Creación de personaje.</a> para que puedas comprobarlo!
+                </p>
+        </ul>
     </section>
 
     <footer class="footer">
-        <div class="container row col-sm-11 justify-content-between">
-            <div class="footer__item--margin col-sm-7 col-md-5 col-xl-4 row justify-content-around">
-                    <i class="footer__item">
-                        <a class="footer__a" href="about-us.html">Sobre nosotros</a>
-                    </i>
-                    <i class="footer__item">
-                        <a class="footer__a" href="about-us.html#contactanos">Contáctanos</a>
-                    </i>    
-            </div>
-            <div class="col-sm-5 col-xl-8 row justify-content-end">
-                <i class="footer__icon">
-                    <a class="footer__aicon--size" href="https://discord.gg/RnW4WXfpf6"></a>
-                </i>
-            </div>
-        </div> 
+        <div class="footer__references">
+            <a class="references__a a" href="./about-us.html">Sobre Nosotros</a>
+            <a class="references__a a" href="./about-us.html#contact-us">Contáctanos</a>
+        </div>
+        <a class="footer__aIcon" href="https://discord.gg/RnW4WXfpf6">
+            <img class="aIcon__img" src="../Multimedia/Images/discord.png" alt="imagen footer">
+        </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
